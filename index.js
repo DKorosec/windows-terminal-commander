@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 const ModeLoader = require('./lib/mode-loader');
 const fs = require('fs');
+const util = require('./lib/util');
 async function main() {
-  const jsonPath = 'C:/Users/dominikk/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/profiles.json';
+  const jsonPath = util.themePath;
   const json = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
   const [, , modeKeyword, ...args] = process.argv;
   const modes = ModeLoader.LoadModes();
