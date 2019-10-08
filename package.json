@@ -12,10 +12,10 @@
   "author": "Dominik Korosec",
   "license": "ISC",
   "dependencies": {
-    "capture-website": "^0.4.0",
+    "capture-website": "0.4.0",
     "fs-extra": "8.1.0",
     "request": "2.88.0",
     "request-promise": "4.2.4",
-    "speedtest-net": "^1.5.1"
+    "speedtest-net": "1.5.1"
   }
 }
